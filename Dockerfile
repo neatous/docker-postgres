@@ -1,4 +1,4 @@
-FROM library/postgres:10.5
+FROM library/postgres:11.0
 
 RUN apt-get update && apt-get install -y \
         locales \
