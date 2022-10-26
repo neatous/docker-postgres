@@ -1,10 +1,10 @@
-FROM library/postgres:14.5
+FROM library/postgres:15.0
 
 RUN apt-get update && apt-get install -y \
         locales \
         locales-all \
         postgis \
-        postgresql-14-postgis-3
+        postgresql-15-postgis-3
 
 RUN rm -rf /var/lib/apt/lists/*
 
