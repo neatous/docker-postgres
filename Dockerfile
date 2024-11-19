@@ -1,10 +1,10 @@
-FROM library/postgres:16.4
+FROM library/postgres:17.1
 
 RUN apt-get update && apt-get install -y \
         locales \
         locales-all \
         postgis \
-        postgresql-16-postgis-3
+        postgresql-17-postgis-3
 
 RUN rm -rf /var/lib/apt/lists/*
 
